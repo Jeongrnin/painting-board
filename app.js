@@ -96,10 +96,10 @@ function onFileChange(event) {
 
 function onDoubleClick(event) {
   const text = textInput.value;
-  if (text === "") {
+  if (text !== "") {
     ctx.save();
     ctx.lineWidth = 1;
-    ctx.font = "68px serif";
+    ctx.font = "68px sans-serif";
     ctx.fillText(text, event.offsetX, event.offsetY);
     ctx.restore();
   }
